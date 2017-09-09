@@ -1,0 +1,30 @@
+{
+  "name": "protoc-flow-js",
+  "version": "0.0.1",
+  "description": "Support protoc for Flow",
+  "author": "Trung NGUYEN",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js",
+    "flow": "flow",
+    "pretest": "npm run flow",
+    "test": "ava src/**.test.js -v",
+    "posttest": "npm run security-check",
+    "security-check": "nsp check"
+  },
+  "devDependencies": {
+    "ava": "^0.22.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.6.1",
+    "flow-bin": "^0.54.1",
+    "nsp": "^2.8.0",
+    "prettier": "^1.6.1",
+    "webpack": "^3.5.6"
+  },
+  "dependencies": {}
+}
